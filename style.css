@@ -339,6 +339,10 @@ body {
 }
 .modal_main_div {
   display: none;
+  /* transition-timing-function: ease-out ;
+  transition-property: background-color;
+  transition-duration: 0.8s; */
+  /* transition: opacity 0.8s; */
   animation: opac 0.8s;
   position: fixed;
   left: 0;
@@ -350,6 +354,14 @@ body {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
+}
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .modal_child_div {
   padding: 32px;
@@ -368,6 +380,11 @@ body {
   right: 46px;
   top: 16%;
   font-size: 24px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+.fa-xmark:hover{
+    background-color: #ccc;
 }
 .modal_heading {
   font-size: 30px;
@@ -965,6 +982,12 @@ body {
     width: 100%;
   }
   .modal_child_div{
-    width: 580px;
+    width: auto;
+    margin: 0 auto;
   }
+}
+@media only screen and (max-width: 768px){
+    .modal_child_div{
+        width: 500px;
+    }
 }

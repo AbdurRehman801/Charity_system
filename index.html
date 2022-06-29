@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <header class="header_main_div">
+      <button class="download_button" onclick="download()">
+        download
+        <i class="fa-brands fa-android"></i>
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-windows"></i>
+      </button>
+      <div class="slidebar_main_parent myslides">
+        <img
+          src="1.jpg"
+          alt=""
+          class="slide_one_pic"
+          height="1000"
+          width="1500"
+        />
+        <div class="slidebar_downloads_main_div">
+          <div class="slidebar_downloads_child_div">
+            <h1 class="slidebar_download_heading_main_one">
+              Take photos with our app
+            </h1>
+            <hr class="slidebar_download_hr_main_one" />
+            <p class="slidebar_download_p1_main_one">
+              Super simple installment: free of charge
+            </p>
+            <p class="slidebar_download_p2_main_one">
+              <button onclick="download()">
+                Download
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-windows"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slidebar_main_parent_two myslides">
+        <img
+          src="4.jpg"
+          alt=""
+          class="slide_two_pic"
+          height="1000"
+          width="1500"
+        />
+        <div class="slidebar_downloads_main_div_two">
+          <div class="slidebar_downloads_child_div_two">
+            <h1 class="slidebar_download_heading_main_two">
+              CLICK! Fast and Easy
+            </h1>
+            <hr class="slidebar_download_hr_main_two" />
+            <p class="slidebar_download_p1_main_two">
+              Choose from thousand of features
+            </p>
+            <p class="slidebar_download_p2_main_two">
+              <button>
+                Download
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-windows"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slidebar_main_parent_three myslides">
+        <img
+          src="5.jpg"
+          alt=""
+          class="slide_three_pic"
+          height="1000"
+          width="1500"
+        />
+        <div class="slidebar_downloads_main_div_three">
+          <div class="slidebar_downloads_child_div_three">
+            <h1 class="slidebar_download_heading_main_three">Smart Design</h1>
+            <hr class="slidebar_download_hr_main_three" />
+            <p class="slidebar_download_p1_main_three">
+              Customize photos as you go
+            </p>
+            <p class="slidebar_download_p2_main_three">
+              <button>
+                Download
+                <i class="fa-brands fa-android"></i>
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-windows"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="slidebar_download_button" onclick="plusDiv(1)"
+        >Take Tour <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a href="#" class="slidebar_responsive_button" onclick="plusDiv(1)"
+        >Take Tour <i class="fa-solid fa-angle-right"></i
+      ></a>
+    </header>
+    <!-- the app white section -->
+    <div class="the_app_main_div">
+      <div class="the_app_child_div">
+        <div class="the_app_first_grid">
+          <h1 class="the_app_first_heading">The App</h1>
+          <h1 class="the_app_second_heading">Why buy it?</h1>
+          <p class="the_app_first_para">
+            <span>Take photos like a pro.</span>
+            You should buy this app because lorem ipsum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur.
+          </p>
+          <button class="the_app_button" onclick="download()">
+            <i class="fa fa-download"></i>
+            Download Application
+          </button>
+          <p class="the_app_second_para">
+            Availble for
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-windows"></i>
+          </p>
+          <div class="the_app_responsive_div">
+            <button onclick="download()">
+              <i class="fa fa-download"></i>
+              Download Application
+            </button>
+            <img src="2.jpg" alt="" width="335" height="471" />
+          </div>
+        </div>
+        <div class="the_app_second_app">
+          <img
+            src="2.jpg"
+            alt=""
+            class="second_grid_first_pic"
+            width="335"
+            height="471"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal_main_div" id="download">
+      <div class="modal_child_div">
+        <div class="modal_nested_child_div">
+          <i class="fa-solid fa-xmark" onclick="downloadClose()"></i>
+          <h2 class="modal_heading">DOWNLOAD</h2>
+          <p class="modal_para">
+            Download the app in AppStore, Google Play or Microsoft Store.
+          </p>
+          <i class="fa-brands fa-android"></i>
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-windows"></i>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter e-mail"
+            class="modal_input"
+          />
+          <button class="modal_button">Fake Download</button>
+        </div>
+      </div>
+    </div>
+    <!-- clarity Section -->
+    <div class="clarity_main_div">
+      <div class="clarity_child_div">
+        <div class="clarity_first_grid">
+          <img
+            src="3.jpg"
+            alt=""
+            width="335"
+            height="471"
+            class="clarity_image"
+          />
+        </div>
+        <div class="clarity_second_grid">
+          <h1 class="clarity_heading">Clarity</h1>
+          <h1 class="clarity_second_heading">Pixels, who?</h1>
+          <p class="clarity_para">
+            <span>A revolution in resolution.</span>
+            Sharp and clear photos with the world's best photo engine,
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="features_main_div">
+      <h1 class="features_main_heading">Features</h1>
+      <p class="features_para">This app is just so lorem ipsum.</p>
+      <div class="features_pics_first_grid">
+        <div class="features_first_grid_one">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <p>Fast</p>
+        </div>
+        <div class="features_first_grid_two">
+          <i class="fa-solid fa-heart"></i>
+          <p>Love</p>
+        </div>
+        <div class="features_first_grid_three">
+          <i class="fa-solid fa-camera"></i>
+          <p>Clarity</p>
+        </div>
+        <div class="features_first_grid_four">
+          <i class="fa-solid fa-battery-full"></i>
+          <p>Power</p>
+        </div>
+      </div>
+      <div class="features_pics_second_grid">
+        <div class="features_second_grid_one">
+          <i class="fa-solid fa-gem"></i>
+          <p>Sharp</p>
+        </div>
+        <div class="features_second_grid_two">
+          <i class="fa-solid fa-cloud"></i>
+          <p>Cloud</p>
+        </div>
+        <div class="features_second_grid_three">
+          <i class="fa-solid fa-earth-asia"></i>
+          <p>Global</p>
+        </div>
+        <div class="features_second_grid_four">
+          <i class="fa-thin fa-box"></i>
+          <p>Storage</p>
+        </div>
+      </div>
+      <div class="features_pics_third_grid">
+        <div class="features_third_grid_one">
+          <i class="fa-solid fa-user"></i>
+          <p>Safe</p>
+        </div>
+        <div class="features_third_grid_two">
+          <i class="fa-solid fa-shield"></i>
+          <p>Stabile</p>
+        </div>
+        <div class="features_third_grid_three">
+          <i class="fa-solid fa-wifi"></i>
+          <p>Connected</p>
+        </div>
+        <div class="features_third_grid_four">
+          <i class="fa-solid fa-image"></i>
+          <p>HD</p>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Section -->
+    <div class="pricing_main_div">
+      <h1 class="pricing_main_heading"><b>Pricing</b></h1>
+      <p class="pricing_para">Choose a pricing plan that fits your needs.</p>
+      <div class="pricing_list_main_div">
+        <div class="pricing_list_first_grid">
+          <ul class="pricing_listing">
+            <li class="pricing_one">Basic</li>
+            <li class="pricing_two"><b>250</b> Photos</li>
+            <li class="pricing_three"><b>10</b> features</li>
+            <li class="pricing_four"><b>No</b> Ads</li>
+            <li class="pricing_five"><b>Office hours</b> Support</li>
+            <li class="pricing_six"><h2>$ 25</h2></li>
+            <li class="pricing_seven">
+              <button onclick="download()"><i class="fa fa-download"></i> Download</button>
+            </li>
+          </ul>
+        </div>
+        <div class="premium_list_first_grid">
+          <ul class="premium_listing">
+            <li class="premium_one">Premium</li>
+            <li class="premium_two"><b>1000</b> Photos</li>
+            <li class="premium_three"><b>50</b> features</li>
+            <li class="premium_four"><b>No</b> Ads</li>
+            <li class="premium_five"><b>Endless</b> Support</li>
+            <li class="premium_six"><h2>$ 99</h2></li>
+            <li class="premium_seven">
+              <button onclick="download()"><i class="fa fa-download"></i> Download</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer_main_div">
+      <div class="footer_icons_div">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat-square"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <p class="footer_para">Powered by <a href="">w3.css</a></p>
+    </footer>
+    <script>
+      function download() {
+        var downloaded = document.getElementById("download");
+        downloaded.style.display = "block";
+      }
+      function downloadClose() {
+        var downloadClosed = document.getElementById("download");
+        downloadClosed.style.display = "none";
+      }
+      var slideIndex = 1;
+      showsDiv(slideIndex);
+      function plusDiv(n) {
+        showsDiv((slideIndex += n));
+      }
+      function showsDiv(n) {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
